@@ -1,0 +1,14 @@
+#!/bin/bash
+
+export LFS_LISTEN=tcp://:8080
+export LFS_HOST=simbelfsserver:8080
+export LFS_METADB=lfs.db
+export LFS_CONTENTPATH=lfs-content
+export LFS_ADMINUSER=simbe
+export LFS_ADMINPASS="w_hite flock_ing grease stain baz_ooka"
+export LFS_CERT=lfs.crt
+export LFS_KEY=lfs.key
+export LFS_SCHEME=https
+
+../lfs-test-server
+exit 0
