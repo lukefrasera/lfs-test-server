@@ -1,7 +1,7 @@
 #!/bin/bash
 
 export LFS_LISTEN=tcp://:8080
-export LFS_HOST=simbelfsserver:8080
+export LFS_HOST=simbelfsserver.dynu.net:8080
 export LFS_METADB=lfs.db
 export LFS_CONTENTPATH=lfs-content
 export LFS_ADMINUSER=simbe
