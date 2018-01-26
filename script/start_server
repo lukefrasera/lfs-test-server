@@ -9,6 +9,7 @@ export LFS_ADMINPASS="w_hite flock_ing grease stain baz_ooka"
 export LFS_CERT=lfs.crt
 export LFS_KEY=lfs.key
 export LFS_SCHEME=https
-
+pushd /home/luke/Documents/lfs-test-server/script
 ../lfs-test-server
+popd
 exit 0

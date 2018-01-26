@@ -1,0 +1,12 @@
+[Unit]
+Description=Simbe LFS CV_ASSETS server
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+User=simbe
+ExecStart=/home/simbe/Documents/lfs-test-server/scripts/start-server
+
+[Install]
+WantedBy=multi-user.target
+
