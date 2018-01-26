@@ -1,0 +1,12 @@
+[Unit]
+Description=Simbe LFS CV_ASSETS server
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+User=simbe
+ExecStart=${INSTALL_PATH}/start-server
+
+[Install]
+WantedBy=multi-user.target
+

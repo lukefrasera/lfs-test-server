@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+INSTALL_PATH=$(echo ${PWD} | sed 's_/_\\/_g')
+SERVICE_FILE="lfs-service.service"
+cat lfs_service_template | sed -e 's/\${INSTALL_PATH}/'"${INSTALL_PATH}"'/g' > ${SERVICE_FILE}
+sudo cp ${SERVICE_FILE} /etc/systemd/system/
+rm ${SERVICE_FILE}
+sudo systemctl start ${SERVICE_FILE}
+sudo systemctl enable ${SERVICE_FILE}
+
